@@ -9,5 +9,5 @@ MarkDown/Linguages:
 ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ![NavBar&Main](https://github.com/Tony2104/standvirtual_Design/assets/55550291/2db5b1ec-48f9-471c-a23c-7fa19dcdb17d)
-![Main]("C:\Users\Antonio R\Desktop\Dev\Web\Design de sites completo\2.png")
-![Main&Footer]("C:\Users\Antonio R\Desktop\Dev\Web\Design de sites completo\3.png")
+![Main](https://github.com/Tony2104/standvirtual_Design/assets/55550291/d5785a98-22a2-49ec-8331-76c0896cf603)
+![Main&Footer](https://github.com/Tony2104/standvirtual_Design/assets/55550291/e213659d-e2d6-402b-a464-a088b60c34ec)
