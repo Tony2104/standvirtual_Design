@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standvirtual</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <a href="" title="Standvirtual - O Nº1 em Carros usados">
+                    <img src="https://statics.standvirtual.com/static/carspt/packed/font/2fea0e82a7918be7c05e03ac8807ee5c24.svg" alt="">
+                    <div>
+                        O Nº1 em Carros
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="">
+                                <i class="fas fa-star"></i>
+                                <div>Favoritos</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-user-circle"></i>
+                                <div>Conta Pessoal</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-plus"></i>
+                                <div>Vender Veículo</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+
+        <div class="alert">
+            <strong>COVID-19:</strong> Os Stands estão novamente abertos e prontos para o receber. Saiba tudo <a href="#" >aqui!</a>
+        </div>
+        
+        <div class="procurar"><!-- 495px -->
+
+            <div>
+                <div class="buscar">
+                    <div class="especificacao">
+
+                        <div>
+                            <button onclick="showconteudo(0, '#f44336')"><i class="fas fa-car"></i>Carros</button>
+                        </div>
+                        <div>
+                            <button onclick="showconteudo(1, '#4caf50')"><i class="fas fa-cog"></i>Peças</button>
+                        </div>
+                        <div>
+                            <button onclick="showconteudo(2, '#2196f3')"><i class="fas fa-motorcycle"></i>Motos</button>
+                        </div>
+                        <div class="down">
+                            <button class="light">Outros Veículos</button>
+                            <div class="drop">
+                                <ul>
+                                    <li><a href="">Comerciais</a></li>
+                                    <li><a href="">Barcos</a></li>
+                                    <li><a href="">Autocaravanas</a></li>
+                                    <li><a href="">Pesados</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conteudo">
+                        <div>
+                            <div class="escolha1">
+                                <div>
+                                    <input type="radio" id="t_carros" name="escolha_carros" value="todos" checked>
+                                    <label for="t_carros">Todos</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="u_carros" name="escolha_carros" value="usados">
+                                    <label for="u_carros">Usados</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="n_carros" name="escolha_carros" value="novos">
+                                    <label for="n_carros">Novos</label>
+                                    <div class="check"></div>
+                                </div>
+                            </div>
+                            <div class="escolha2">
+                                <div>
+                                    <p>Marca e Modelo</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="Marca">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="Modelo">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Preço</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Ano</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Quilómetros</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Combustível</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="Combustível">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <a href="">Pesquisa avançada</a>
+                                <a href="">Pesquisar <i class="fas fa-search"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div>
+                            <div class="escolha1">
+                                <div>
+                                    <input type="radio" id="t_pecas" name="escolha_pecas" value="todos" checked>
+                                    <label for="t_pecas">Todos</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="u_pecas" name="escolha_pecas" value="usados">
+                                    <label for="u_pecas">Usados</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="n_pecas" name="escolha_pecas" value="novos">
+                                    <label for="n_pecas">Novos</label>
+                                    <div class="check"></div>
+                                </div>
+                            </div>
+                            <div class="escolha3">
+                                    <div>
+                                        <p>Pesquise no nosso catálogo de peças</p>
+                                        <div>
+                                            <input type="text" placeholder="ex: motores, chassis, espelhos...">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <p>Categoria</p>
+                                            <div>
+                                                <input type="search" placeholder="Categoria">
+                                                
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Tipo de veículo</p>
+                                            <div>
+                                                <input type="search" placeholder="Tipo de veículo">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <a href="">Pesquisa avançada</a>
+                                <a href="">Pesquisar <i class="fas fa-search"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div>
+                            <div class="escolha1">
+                                <div>
+                                    <input type="radio" id="t_motos" name="escolha_motos" value="todos" checked>
+                                    <label for="t_motos">Todos</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="u_motos" name="escolha_motos" value="usados">
+                                    <label for="u_motos">Usados</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div>
+                                    <input type="radio" id="n_motos" name="escolha_motos" value="novos">
+                                    <label for="n_motos">Novos</label>
+                                    <div class="check"></div>
+                                </div>
+                            </div>
+                            <div class="escolha2">
+                                <div>
+                                    <p>Marca e Modelo</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="Marca">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="Modelo">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Preço</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Ano</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Quilómetros</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="de">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+
+                                        <input type="search" list="modelos" placeholder="até">
+                                        <datalist id="modelos">
+                                            <option value="X300">
+                                            <option value="XF">
+                                            <option value="XJ6">
+                                            <option value="XJ8">
+                                            <option value="XK">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Combustível</p>
+                                    <div>
+                                        <input type="search" list="marca" placeholder="Combustível">
+                                        <datalist id="marca">
+                                            <option value="Honda">
+                                            <option value="Jaguar">
+                                            <option value="Mercedes-Benz">
+                                            <option value="SEAT">
+                                            <option value="Volvo">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <a href="">Pesquisa avançada</a>
+                                <a href="">Pesquisar <i class="fas fa-search"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="artigo">
+                    <div class="fundo">
+                        <div>
+                            <a href="">
+                                <img src="./img/carro_grande4.webp" alt="" title="Mercedes-Benz E 220 AMG Full AUTOPO">
+                            </a>
+                        </div>
+                        <div>oportunidade do dia</div>
+                        <div class="descricao">
+                            <div>
+                                <div>
+                                    <a href="">
+                                        <p>Mercedes-Benz E 220 AMG Full AUTOPO</p>
+                                    </a>
+                                </div>                                
+                                <div>
+                                    <p>2020</p>
+                                    <span></span>
+                                    <p>63000 km</p>
+                                </div>
+                                <div>59 900 <sup>EUR</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="montra">
+            <!--
+            <div class="quadro_grande">
+                <div>
+                    <div>ola1</div>
+                </div>
+            </div>
+            -->
+            <div class="quadro_pequeno">
+                
+                <div>
+                    <div class="fundo_p">
+                        <div>
+                            <a href="">
+                                <img src="./img/carro_grande4.webp" alt="" title="Mercedes-Benz E 220 AMG Full AUTOPO">
+                            </a>
+                        </div>
+                        <div class="descricao_p">
+                            <div>
+                                <div>
+                                    <a href="">
+                                        <p>Mercedes-Benz E 220 AMG Full AUTOPO</p>
+                                    </a>
+                                </div>                                
+                                <div>
+                                    <small>
+                                        <p>2020</p>
+                                        <span></span>
+                                        <p>63000 km</p>
+                                    </small>
+                                </div>
+                                <div>59 900 <sup>EUR</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>ola3</div>
+                <div>ola4</div>
+                <div>ola5</div>
+                
+            </div>
+        
+            <div class="slide">
+                <div>
+                    <div class="fundo_s">
+                        <div>
+                            <a href="">
+                                <img src="./img/carro_grande4.webp" alt="" title="Mercedes-Benz E 220 AMG Full AUTOPO">
+                            </a>
+                        </div>
+                        <div class="descricao_s">
+                            <div>
+                                <div>
+                                    <a href="">
+                                        <p>Mercedes-Benz E 220 AMG Full AUTOPO</p>
+                                    </a>
+                                    <div>59 900 <sup>EUR</sup></div>
+                                </div>                           
+                                <div>
+                                    <small>
+                                        <p>2020</p>
+                                        <span></span>
+                                        <p>63000 km</p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>ola7</div>
+                <div>ola8</div>
+                <div>ola9</div>
+                <div>ola10</div>
+                <div>ola11</div>
+            </div>
+            
+            <div class="button">
+                <a href="#">Ver todos os anúncios em destaque</a>
+            </div>
+
+            <div class="publi">
+                <div>publi1</div>
+                <div>publi2</div>
+                <div>publi3</div>
+            </div>
+        </div>
+
+        <div class="ajuda">
+            <div>
+                <p>Precisa de ajuda?</p>
+                <a href="">Contacte-nos</a>
+            </div>
+        </div>
+
+        <div class="empresario">
+            <div>
+                <p>É proprietário de um Stand de Automóveis?</p>
+                <a href="">Conta profissional</a>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <div>
+                    <div class="cap redes">
+                        <p>Redes Sociais</p>
+                        <div>
+
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                                <p>Facebook</p>
+                            </a>
+
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                                <p>Youtube</p>
+                            </a>
+
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                                <p>Instagram</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cap sobre">
+                        <p>Sobre Nós</p>
+                        <div>
+                            
+                            <a href="">
+                                <p>Ajuda</p>
+                            </a>
+                            <a href="">
+                                <p>Contacto</p>
+                            </a>
+                            <a href="">
+                                <p>Política de cookies</p>
+                            </a>
+                            <a href="">
+                                <p>Condições de utilização</p>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <p>Política de Privacidade</p>
+                                    <span>Novos</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cap servicos">
+                        <p>Serviços e ferramentas</p>
+                        <div>
+
+                            <a href="">
+                                <p>Profissionais</p>
+                            </a>
+                            <a href="">
+                                <p>Destaques</p>
+                            </a>
+        
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cap informacoes">
+                        <p>informações</p>
+                        <div>
+
+                            <a href="">
+                                <p>Comprar em Segurança</p>
+                            </a>
+                            <a href="">
+                                <p>Carros usados em Portugal</p>
+                            </a>
+                            <a href="">
+                                <p>Veículos usados à venda</p>
+                            </a>
+                            <a href="">
+                                <p>Carreiras</p>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img_logo">
+                <img src="https://statics.standvirtual.com/static/carspt/packed/font/2f3a1dbaf77d46bdcbecd59729c602a57e.svg" alt="">
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/5e7abc4b74.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/drop.js"></script>
+    
+</body>
+</html>
