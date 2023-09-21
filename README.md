@@ -1,6 +1,6 @@
 # standvirtual_Design
 
-A prototype of the Standvirtual design -> no responsive design
+A prototype of the Standvirtual design -> no responsive design | Single-Page
 
 Markup/Languages:
 
